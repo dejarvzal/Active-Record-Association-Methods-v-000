@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
 
   def get_genre_name
     # self.genre
-    self.genre.map {|g| g.name}
+    self.genre.each {|g| g.name}
 
   end
 
